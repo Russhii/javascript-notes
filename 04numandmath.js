@@ -30,6 +30,7 @@
 // 4
 
 // console.log(Math.min(4,2,5,6,8));
+
 // 2
 
 // console.log(Math.max(3,4,6,2,5,6))
@@ -41,3 +42,7 @@ const min = 10;
 const max =20;
 
 console.log(Math.floor(Math.random()*(max-min +1))+min)
+
+// git remote add origin https://github.com/Russhii/javascript-notes.git
+// git branch -M main
+// git push -u origin main
