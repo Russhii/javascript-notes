@@ -46,22 +46,37 @@
     // }
       // attachEvent() in early time
     // jOuery-onEventListener
-       // Lern TYpes Evetn
+       // Learn TYpes Event
     // Learn Event
-    // defultPreented
+    // defultPrevented
     //target,toElement,srcElement.currentTarget,
-    // clinetX ,clientY,screenX,screenY
-    //altKey,ctlKey,shiftKey,keyCode
+    // clinetX ,clientY,screenX,screenY,offset
+    //altKey,ctrKey,shiftKey,keyCode
     // document.getElementById('owl').addEventListener('click',function(e){
     //    console.log(e);
     // },false)
  
-    document.getElementById('images').addEventListener('click',function(e){
-       console.log("clicked inside the ul");
+    // document.getElementById('images').addEventListener('click',function(e){
+    //    console.log("clicked inside the ul");
+    // },false)
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //    console.log("owl clicked");
+    //    e.stopPropagation();
+    // },false)
+    
+    // document.getElementById('google').addEventListener('click' ,function(e){
+        
+    //       e.preventDefault();
+    //       e.stopPropagation();
+    //       console.log('google clicked');
+    // },false)
+
+    document.getElementById('images').addEventListener('click',function(e){ 
+        console.log(e.target.parentNode);
+        let removeIt =e.target.parentNode;
+        console.log(e.target.tagName)
+         removeIt.remove();
+       // removeIt.parentNode.removeChild(removeIt);
     },false)
-    document.getElementById('owl').addEventListener('click',function(e){
-       console.log("clicked inside the ul");
-    },false)
- 
 </script>
 </html>
